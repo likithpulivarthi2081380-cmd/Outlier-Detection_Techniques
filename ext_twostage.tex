@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\caption{Two-stage pipelines against the plausibility reference set (development sample).}
+\label{tab:ext_twostage}
+\centering
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{tabular}{lccc}
+\hline
+Pipeline & Flagged (\%) & Prec. (\%) & Recall (\%) \\
+\hline
+IQR only & 12.53 & 0.22 & 4.14 \\
+LOF only (log-robust) & 5.00 & 3.84 & 28.40 \\
+IQR, then LOF on remainder & 16.90 & 1.31 & 32.84 \\
+Isolation Forest only & 5.00 & 4.04 & 29.88 \\
+Isolation Forest, then LOF on remainder & 9.75 & 3.14 & 45.27 \\
+\hline
+\end{tabular}
+\end{table}

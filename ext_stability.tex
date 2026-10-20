@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\caption{Stability of the flagged sets (membership overlap, not just counts) across random seeds and neighborhood sizes.}
+\label{tab:ext_stability}
+\centering
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{tabular}{lccc}
+\hline
+Comparison & Flagged A & Flagged B & Jaccard \\
+\hline
+Isolation Forest, seed 42 vs 7 & 4999 & 5000 & 0.852 \\
+Isolation Forest, seed 42 vs 123 & 4999 & 5000 & 0.899 \\
+Isolation Forest, seed 7 vs 123 & 5000 & 5000 & 0.848 \\
+LOF, k=10 vs k=20 & 5000 & 5000 & 0.320 \\
+LOF, k=10 vs k=50 & 5000 & 5000 & 0.242 \\
+LOF, k=20 vs k=50 & 5000 & 5000 & 0.522 \\
+\hline
+\end{tabular}
+\end{table}

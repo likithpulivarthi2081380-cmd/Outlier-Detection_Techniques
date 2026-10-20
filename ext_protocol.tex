@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\caption{Regression RMSE under the conference-version protocol (outliers removed from the whole sample before the split, so each row is scored on a different filtered test set). These values are not comparable across rows.}
+\label{tab:ext_protocol}
+\centering
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{tabular}{lc}
+\hline
+Condition & RMSE (s) \\
+\hline
+No removal (baseline) & 3199.692 \\
+Z-score removed & 382.135 \\
+IQR removed & 289.069 \\
+Isolation Forest removed & 333.596 \\
+LOF removed & 3036.696 \\
+\hline
+\end{tabular}
+\end{table}

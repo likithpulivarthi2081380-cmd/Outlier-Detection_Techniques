@@ -1,0 +1,25 @@
+\begin{table}[!t]
+\caption{Extended detector comparison on the shared development sample. Precision and recall are measured against the rule-based plausibility set ($n=676$ records) and are proxies, not ground truth.}
+\label{tab:ext_detectors}
+\centering
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{tabular}{lccccc}
+\hline
+Space & Detector & Flagged (\%) & Time (s) & Prec. (\%) & Recall (\%) \\
+\hline
+raw & Z-score & 3.60 & 0.00 & 0.47 & 2.51 \\
+raw & IQR & 12.53 & 0.01 & 0.22 & 4.14 \\
+raw & MAD & 11.67 & 0.01 & 0.22 & 3.85 \\
+raw & MCD & 38.11 & 10.32 & 1.65 & 92.90 \\
+raw & Isolation Forest & 5.00 & 0.61 & 4.04 & 29.88 \\
+raw & LOF & 5.00 & 0.64 & 7.60 & 56.21 \\
+log-robust & Z-score & 1.84 & 0.00 & 36.68 & 100.00 \\
+log-robust & IQR & 5.70 & 0.01 & 11.86 & 100.00 \\
+log-robust & MAD & 2.78 & 0.01 & 24.29 & 100.00 \\
+log-robust & MCD & 38.83 & 13.74 & 1.74 & 100.00 \\
+log-robust & Isolation Forest & 5.00 & 0.63 & 13.52 & 100.00 \\
+log-robust & LOF & 5.00 & 0.60 & 3.84 & 28.40 \\
+\hline
+\end{tabular}
+\end{table}

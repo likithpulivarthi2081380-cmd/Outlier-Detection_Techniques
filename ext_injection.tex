@@ -1,0 +1,25 @@
+\begin{table*}[!t]
+\caption{Detection quality with injected anomalies (1\% of records; four anomaly types; mean$\pm$std over 5 seeds). Here ground truth is known by construction.}
+\label{tab:ext_injection}
+\centering
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{tabular}{lcccc}
+\hline
+Space & Detector & AUROC & AP & P@k \\
+\hline
+log-robust & IQR & 0.999$\pm$0.000 & 0.919$\pm$0.001 & 0.841$\pm$0.001 \\
+log-robust & Isolation Forest & 0.998$\pm$0.000 & 0.769$\pm$0.052 & 0.772$\pm$0.014 \\
+log-robust & LOF & 0.666$\pm$0.015 & 0.103$\pm$0.009 & 0.226$\pm$0.016 \\
+log-robust & MAD & 0.999$\pm$0.000 & 0.919$\pm$0.001 & 0.841$\pm$0.001 \\
+log-robust & MCD & 0.982$\pm$0.001 & 0.398$\pm$0.010 & 0.522$\pm$0.008 \\
+log-robust & Z-score & 0.999$\pm$0.000 & 0.895$\pm$0.003 & 0.805$\pm$0.001 \\
+raw & IQR & 0.957$\pm$0.000 & 0.654$\pm$0.005 & 0.742$\pm$0.002 \\
+raw & Isolation Forest & 0.981$\pm$0.001 & 0.550$\pm$0.028 & 0.574$\pm$0.035 \\
+raw & LOF & 0.747$\pm$0.009 & 0.267$\pm$0.014 & 0.348$\pm$0.010 \\
+raw & MAD & 0.946$\pm$0.001 & 0.647$\pm$0.004 & 0.740$\pm$0.002 \\
+raw & MCD & 0.941$\pm$0.001 & 0.619$\pm$0.004 & 0.734$\pm$0.006 \\
+raw & Z-score & 0.969$\pm$0.003 & 0.628$\pm$0.017 & 0.653$\pm$0.052 \\
+\hline
+\end{tabular}
+\end{table*}

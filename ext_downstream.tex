@@ -1,0 +1,41 @@
+\begin{table*}[!t]
+\caption{Downstream linear regression with every detector evaluated on the same held-out sets (full test partition, and test partition after rule-based filtering); mean$\pm$std over 5 splits. Errors in seconds.}
+\label{tab:ext_downstream}
+\centering
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{tabular}{lccccccc}
+\hline
+Eval & Space & Detector & Kept (\%) & RMSE & MAE & MedAE & RMSLE \\
+\hline
+full & log-robust & IQR & 94.3 & 3248.7$\pm$238.2 & 413.0$\pm$20.5 & 202.2$\pm$0.4 & 0.562$\pm$0.009 \\
+full & log-robust & Isolation Forest & 95.0 & 3246.0$\pm$238.7 & 411.3$\pm$20.3 & 211.7$\pm$1.4 & 0.578$\pm$0.007 \\
+full & log-robust & LOF & 95.0 & 3242.8$\pm$238.8 & 438.6$\pm$18.7 & 263.6$\pm$6.4 & 0.644$\pm$0.011 \\
+full & log-robust & MAD & 97.2 & 3245.8$\pm$238.8 & 411.4$\pm$20.5 & 212.1$\pm$1.1 & 0.579$\pm$0.009 \\
+full & log-robust & MCD & 61.3 & 3265.6$\pm$236.3 & 447.1$\pm$20.1 & 200.0$\pm$1.0 & 0.553$\pm$0.008 \\
+full & log-robust & None & 100.0 & 3244.8$\pm$238.0 & 472.7$\pm$19.5 & 312.7$\pm$11.3 & 0.703$\pm$0.022 \\
+full & log-robust & Z-score & 98.2 & 3245.5$\pm$238.9 & 411.7$\pm$20.4 & 214.3$\pm$1.0 & 0.583$\pm$0.009 \\
+full & raw & IQR & 87.5 & 3255.6$\pm$237.3 & 425.0$\pm$20.4 & 197.2$\pm$0.2 & 0.551$\pm$0.009 \\
+full & raw & Isolation Forest & 95.0 & 3247.7$\pm$238.4 & 412.3$\pm$20.6 & 204.8$\pm$1.0 & 0.566$\pm$0.010 \\
+full & raw & LOF & 95.0 & 3244.4$\pm$238.1 & 443.9$\pm$20.1 & 264.6$\pm$3.9 & 0.637$\pm$0.007 \\
+full & raw & MAD & 88.3 & 3256.6$\pm$237.2 & 426.9$\pm$20.4 & 196.3$\pm$0.4 & 0.550$\pm$0.009 \\
+full & raw & MCD & 61.9 & 3267.0$\pm$236.5 & 438.3$\pm$20.1 & 180.6$\pm$0.5 & 0.534$\pm$0.008 \\
+full & raw & None & 100.0 & 3244.8$\pm$238.0 & 472.7$\pm$19.5 & 312.7$\pm$11.3 & 0.703$\pm$0.022 \\
+full & raw & Z-score & 96.4 & 3249.0$\pm$238.1 & 415.0$\pm$20.4 & 206.9$\pm$0.7 & 0.567$\pm$0.010 \\
+rule-clean & log-robust & IQR & 94.3 & 3249.5$\pm$242.8 & 412.6$\pm$21.0 & 201.5$\pm$0.4 & 0.531$\pm$0.005 \\
+rule-clean & log-robust & Isolation Forest & 95.0 & 3249.0$\pm$242.9 & 410.9$\pm$20.8 & 210.8$\pm$1.4 & 0.546$\pm$0.003 \\
+rule-clean & log-robust & LOF & 95.0 & 3247.4$\pm$242.6 & 438.1$\pm$19.4 & 262.8$\pm$6.5 & 0.610$\pm$0.009 \\
+rule-clean & log-robust & MAD & 97.2 & 3249.0$\pm$243.0 & 411.0$\pm$21.0 & 211.2$\pm$1.1 & 0.546$\pm$0.005 \\
+rule-clean & log-robust & MCD & 61.3 & 3258.5$\pm$241.5 & 446.8$\pm$20.6 & 199.7$\pm$0.9 & 0.525$\pm$0.005 \\
+rule-clean & log-robust & None & 100.0 & 3248.3$\pm$242.2 & 472.0$\pm$20.4 & 311.7$\pm$11.1 & 0.669$\pm$0.018 \\
+rule-clean & log-robust & Z-score & 98.2 & 3249.1$\pm$243.0 & 411.3$\pm$20.9 & 213.5$\pm$1.0 & 0.550$\pm$0.005 \\
+rule-clean & raw & IQR & 87.5 & 3252.5$\pm$242.3 & 424.7$\pm$20.9 & 196.5$\pm$0.2 & 0.521$\pm$0.005 \\
+rule-clean & raw & Isolation Forest & 95.0 & 3249.2$\pm$242.9 & 411.9$\pm$21.2 & 203.8$\pm$1.0 & 0.534$\pm$0.005 \\
+rule-clean & raw & LOF & 95.0 & 3246.8$\pm$242.5 & 443.5$\pm$20.5 & 263.9$\pm$4.0 & 0.604$\pm$0.002 \\
+rule-clean & raw & MAD & 88.3 & 3253.1$\pm$242.3 & 426.6$\pm$20.9 & 195.8$\pm$0.4 & 0.521$\pm$0.005 \\
+rule-clean & raw & MCD & 61.9 & 3259.4$\pm$241.6 & 437.9$\pm$20.6 & 180.7$\pm$0.4 & 0.507$\pm$0.005 \\
+rule-clean & raw & None & 100.0 & 3248.3$\pm$242.2 & 472.0$\pm$20.4 & 311.7$\pm$11.1 & 0.669$\pm$0.018 \\
+rule-clean & raw & Z-score & 96.4 & 3249.2$\pm$242.8 & 414.6$\pm$20.9 & 206.0$\pm$0.7 & 0.535$\pm$0.005 \\
+\hline
+\end{tabular}
+\end{table*}
